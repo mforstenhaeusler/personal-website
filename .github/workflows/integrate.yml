@@ -10,9 +10,12 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-deploy:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./src
 
     strategy:
       matrix:
@@ -21,8 +24,12 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
+      #with:
+      #    persist-credentials: false
+    
+    - name: Install and Build 🔧
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
@@ -37,4 +44,4 @@ jobs:
       with:
         #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages # The branch the action should deploy to.
-        folder: src # The folder the action should deploy.
+        folder: out # The folder the action should deploy.
