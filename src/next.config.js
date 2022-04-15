@@ -17,6 +17,7 @@ module.exports = {
   },
   images: {
     loader: "custom",
-  }
-  //assetPrefix: '',
+  },
+  basePath: '/personal-website-template',
+  assetPrefix: '/personal-website-template',
 }
