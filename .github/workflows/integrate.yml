@@ -73,7 +73,7 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: Installing my packages
+      - name: Installing my packages 🔧
         run: |
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
@@ -83,7 +83,7 @@ jobs:
           npm i
           fi
 
-      - name: Build my App
+      - name: Build 🔧
         run: npm run build && npm run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
@@ -91,4 +91,4 @@ jobs:
         with:
           #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+          folder: out # The folder the action should deploy.
