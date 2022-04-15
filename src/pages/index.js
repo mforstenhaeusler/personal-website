@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from '../components/Image.js'
 import styles from '../styles/Home.module.css'
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -60,7 +62,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src={"${process.env.NEXT_PUBLIC_BASE_PATH}/vercel.svg"} alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
