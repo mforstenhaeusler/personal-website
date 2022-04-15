@@ -90,7 +90,15 @@ jobs:
           npm i
           fi
       - name: Build 🔧
-        run: npm run build && npm run export && touch ./out/.nojekyll
+        run: npm run build 
+        env: 
+          NEXT_PUBLIC_BASE_PATH: /personal-website-template
+      - run: 
+          npm run export
+        env: 
+          NEXT_PUBLIC_BASE_PATH: /personal-website-template
+      - run:
+          touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.0
