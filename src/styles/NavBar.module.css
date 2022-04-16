@@ -1,0 +1,74 @@
+.NavBarItem {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    z-index: 1007;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(125.53deg, #211B45 8.83%, #0F2538 99.14%), #C4C4C4;
+    /*background: linear-gradient(125.53deg, #efe9fe 8%, #fbfafb 99%), #C4C4C4;*/
+    /*background-color: #efe9fe;*/
+  }
+  .Grid{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .Logo{
+    display: flex;
+    gap: 24px;
+  }
+  .Header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: bold;
+    /*color: black;*/
+    color: white;
+  }
+  .subLogo{
+    width: calc(((100% - (3 * 24px)) / 4 * 1) + (0 * 24px));
+    display: flex;
+    flex-direction: column;
+  }
+  .Nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 48px;
+  }
+  .Link {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    /*color: black;*/
+    color: white;
+    opacity: 0.8;
+  }
+  @media only screen and (max-width: 1300px) {
+    .Grid{
+      width: 1000px;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    .Grid{
+      width: 800px;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .Grid{
+      width: 90%;
+    }
+    .Nav{
+      display: none;
+    }
+    .NavBarItem {
+      background: transparent;
+      position: absolute;
+    }
+  }

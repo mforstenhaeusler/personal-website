@@ -1,116 +1,129 @@
 .container {
-  padding: 0 2rem;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.Footer {
+  width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  /*background: #100D21;*/
+  background: linear-gradient(125.53deg, #211B45 8.83%, #0F2538 99.14%), #C4C4C4;
   justify-content: center;
-  align-items: center;
 }
-
-.footer a {
+.Grid{
+  width: 1200px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  gap: 24px;
 }
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.Container{
+  width: calc(((100% - (5 * 24px)) / 6 * 4) + (3 * 24px));
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.Top{
+  width: 100%;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.Middle{
+  width: 100%;
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  gap: 24px;
+}
+.FirstContainer{
+  width: calc(((100% - (3 * 24px)) / 4 * 2) + (1 * 24px));
+  padding-right: 15%;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.SecondContainer{
+  width: calc(((100% - (3 * 24px)) / 4 * 1) + (0 * 24px));
+  display: flex;
+  flex-direction: column;
+}
+.ThirdContainer{
+  width: calc(((100% - (3 * 24px)) / 4 * 1) + (0 * 24px));
+  display: flex;
+  flex-direction: column;
+}
+.Link{
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+
+}
+.Bottom{
+  display: flex;
+  gap: 24px;
+}
+.SocialWrapper{
+  width: 32px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.OuttroItem{
+  width: 100%;
+  position: relative;
+  padding-bottom: 200px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+@media only screen and (max-width: 1300px) {
+  .Grid{
+    width: 1000px;
+  }
 }
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+@media only screen and (max-width: 1100px) {
+  .Grid{
+    width: 800px;
+  }
+  .FirstContainer{
+    padding-right: 0%;
+  }
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
+@media only screen and (max-width: 850px) {
+  .Footer {
+    height: 400px;
+  }
+  .Grid{
+    width: 90%;
+  }
+  .Container{
     width: 100%;
+  }
+  .Middle{
     flex-direction: column;
+  }
+  .FirstContainer{
+    width: 100%;
+  }
+  .SecondContainer{
+    width: 100%;
+  }
+  .ThirdContainer{
+    width: 100%;
   }
 }
