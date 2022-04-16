@@ -50,7 +50,7 @@ export default function Hero({ prefix }){
         </div>
       </div>
       <div className={styles.RightContainer}>
-        <Image src={"/assets/IMG_0443.JPG"} alt={"LinkedIn"} width={280} height={400} objectFit="cover" className={styles.headshot}/>
+        <Image src={prefix +  "/assets/IMG_0443.JPG"} alt={"LinkedIn"} width={280} height={400} objectFit="cover" className={styles.headshot}/>
       </div>
     </div>
   </div>
