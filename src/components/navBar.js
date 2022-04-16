@@ -2,7 +2,7 @@ import styles from '../styles/NavBar.module.css'
 import Image from '../components/Image.js'
 import Link from 'next/link'
 
-export default function NavBar({ firstname, lastname, prefix }){
+export default function NavBar({ firstname, lastname }){
   return <div className={styles.NavBarItem}>
     <div className={styles.Grid}>
       <div className={styles.Logo}> 
@@ -20,10 +20,10 @@ export default function NavBar({ firstname, lastname, prefix }){
 </a>*/}
       </div>
       <div className={styles.Nav}>
-        <Link href={prefix + "/"} className={styles.Link}><a className={styles.Link}> Home </a></Link>
-        <Link href={prefix + "/experience"} className={styles.Link}><a className={styles.Link}> Experience </a></Link>
-        <Link href={prefix + "/publications_projects"} className={styles.Link}><a className={styles.Link}> Publications / Projects </a></Link>
-        <Link href={prefix + "/personal"}><a className={styles.Link}> Personal </a></Link>
+        <Link href={"/"} className={styles.Link}><a className={styles.Link}> Home </a></Link>
+        <Link href={"/experience"} className={styles.Link}><a className={styles.Link}> Experience </a></Link>
+        <Link href={"/publications_projects"} className={styles.Link}><a className={styles.Link}> Publications / Projects </a></Link>
+        <Link href={"/personal"}><a className={styles.Link}> Personal </a></Link>
         </div>
         
     </div>
