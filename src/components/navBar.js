@@ -1,14 +1,102 @@
 import styles from '../styles/NavBar.module.css'
 import Image from '../components/Image.js'
+import { faBars} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useState } from 'react';
 import Link from 'next/link'
 
+
+const navLinks = [
+  {
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "name": "Experience",
+    "path": "/experience"
+  },
+  {
+    "name": "Publications / Projects",
+    "path": "/publications_projects"
+  },
+  {
+    "name": "Personal",
+    "path": "/personal"
+  },
+];
+
+
 export default function NavBar({ firstname, lastname }){
-  return <div className={styles.NavBarItem}>
-    <div className={styles.Grid}>
+  const [isNavMenuCollapsed, setIsNavMenuCollapsed] = useState(true);
+
+  const handleNavMenuCollapse = () => {
+    if (!isNavMenuCollapsed) {
+      setIsNavMenuCollapsed(true);
+      document.getElementById("collapsedNavMenu").style.visibility = "visible";
+      document.getElementById("menuIcon").style.transition = "0.5s";
+      document.getElementById("menuIcon").style.transform = "rotate(180deg)";
+      document.getElementById("bgContainer").style.height = "230px";
+    } else {
+      setIsNavMenuCollapsed(false);
+      document.getElementById("collapsedNavMenu").style.visibility = "hidden";
+      document.getElementById("menuIcon").style.transition = "0.5s";
+      document.getElementById("menuIcon").style.transform = "rotate(0deg)";
+      document.getElementById("bgContainer").style.height = "80px";
+    }
+  };
+
+  return <div className={styles.BgContainer} id="bgContainer">
+  <div className={styles.NavBar}>
+      <nav className={styles.Navbar__Items}>
+        <Link href={"/"}>
+          <a className={styles.Navbar__Link__Brand}> {firstname} {lastname} </a>
+        </Link>
+      </nav>
+      <nav className={styles.Navbar__Items__right} id="Navbar__Items__right">
+        {navLinks.map((link, index)=>{
+          return(
+            <Link key={index} href={link.path}>
+              <a key={index} className={styles.Navbar__Link}> {link.name} </a>
+            </Link>            
+          )
+        })}
+        {/*<Link href={"/"}>
+          <a href={"/"} className={styles.Navbar__Link}> Home </a>
+        </Link>
+        <Link href={"/experience"}>
+          <a href={"/experience"} className={styles.Navbar__Link}> Experience </a>
+        </Link>
+        <Link href={"/publications_projects"}>
+          <a href={"/publications_projects"} className={styles.Navbar__Link}> Publications / Projects </a>
+        </Link>
+        <Link href={"/personal"}>
+          <a href={"/personal"} className={styles.Navbar__Link}> Personal </a>
+      </Link>*/}
+        <div className={styles.Navbar__Link__toggle} onClick={handleNavMenuCollapse} id="menuIcon"> 
+          <FontAwesomeIcon className={styles.toogle} icon={faBars}/>
+        </div> 
+      </nav>
+      {/*<div className={styles.collapsedBgContainer}>*/}
+      <div className={styles.collapsedNavMenu} id="collapsedNavMenu"> 
+        {navLinks.map((link, index)=>{
+            return(
+              <Link key={index} href={link.path}>
+                <a key={index} className={styles.collapsed__Navbar__Link}> {link.name} </a>
+              </Link>            
+            )
+        })}
+      </div>
+      {/*</div>*/}
+    </div>
+    
+    
+    
+    
+    {/*<div className={styles.Grid}>
       <div className={styles.Logo}> 
         <div className={styles.Header}>
-            {firstname} {lastname}
-        </div>
+          <Link href={"/"} className={styles.Link}><a> {firstname} {lastname} </a></Link>  
+        </div>*/}
         {/*<a className={styles.subLogo} href="https://www.linkedin.com/in/maximilian-forstenhaeusler/">
           <Image src={"/assets/linkedIn.svg"} alt="linkedIn" width={55} height={55}  objectFit="contain" />
         </a>
@@ -17,8 +105,8 @@ export default function NavBar({ firstname, lastname }){
         </a>
         <a className={styles.subLogo} href="https://github.com/mforstenhaeusler">
           <Image src={"/assets/GitHub-Mark-Light.png"} alt="github" width={55} height={55} objectFit="contain" />
-</a>*/}
-      </div>
+        </a>*/}
+      {/*</div>
       <div className={styles.Nav}>
         <Link href={"/"} className={styles.Link}><a className={styles.Link}> Home </a></Link>
         <Link href={"/experience"} className={styles.Link}><a className={styles.Link}> Experience </a></Link>
@@ -26,6 +114,6 @@ export default function NavBar({ firstname, lastname }){
         <Link href={"/personal"}><a className={styles.Link}> Personal </a></Link>
         </div>
         
-    </div>
+      </div>*/}
   </div>
 }

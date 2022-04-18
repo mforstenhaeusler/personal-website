@@ -1,5 +1,5 @@
 import styles from '../styles/About.module.css'
-import stylesChapterBar from '../styles/ChapterBar.module.css'
+import ChapterBar from './chapterBar'
 
 
 const data = {
@@ -14,31 +14,6 @@ const data = {
 
 
 export default function About(){
-
-  function ChapterBar({number, content, isDarkBackground}){
-    if(isDarkBackground){
-      return <div className={stylesChapterBar.ChapterBarItem}>
-        <div className={stylesChapterBar.LeftConteiner}>
-          <div className={stylesChapterBar.Number}>{number}</div>
-        </div>
-        <div className={stylesChapterBar.Separartor}></div>
-        <div className={stylesChapterBar.RightConteiner}>
-          <div className={stylesChapterBar.Chapter}>{content}</div>
-        </div>
-      </div>
-    }else{
-      return <div className={stylesChapterBar.ChapterBarItem}>
-        <div className={stylesChapterBar.LeftConteiner}>
-          <div className={stylesChapterBar.NumberDark}>{number}</div>
-        </div>
-        <div className={stylesChapterBar.SeparartorDark}></div>
-        <div className={stylesChapterBar.RightConteiner}>
-          <div className={stylesChapterBar.ChapterDark}>{content}</div>
-        </div>
-      </div>
-    }
-  }
-
   return <div className={styles.AboutItem}>
     <div className={styles.Description}>
       <div className={styles.Grid}>

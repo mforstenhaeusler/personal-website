@@ -3,15 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -80px;
   margin-bottom: 150px;
+  z-index: -1;
+  
 }
-
 .Background{
   width: 100%;
-  height: calc(500px + ((100vw * 0.176327) / 2));
+  height: calc(420px + ((100vw * 0.176327) / 2));
   position: absolute;
+  /*background: linear-gradient(125.53deg, #211B45 8.83%, #0F2538 99.14%), #C4C4C4;*/
 }
-
 .BgContainer{
   position: absolute;
   width: 100%;
@@ -29,8 +31,8 @@
   width: 1200px;
   display: flex;
   justify-content: center;
-  gap: 50px;
-  padding-top: 180px;
+  gap: 70px;
+  padding-top: 120px;
 }
 .LeftContainer{
   width: calc(((100% - (5 * 24px)) / 6 * 2) + (1 * 24px));
@@ -95,9 +97,10 @@
   width: 60%;
 }
 .subLogo{
+  display: flex;
+  flex-direction: row;
   width: 32px;
   height: 32px;
-  position: relative;
   cursor: pointer;
 }
 
@@ -136,18 +139,35 @@
   }
   .LeftContainer{
     width: calc(((100% - (5 * 24px)) / 6 * 4) + (3 * 24px));
+    align-items: center;
   }
   .RightContainer{
     width: calc(((100% - (5 * 24px)) / 6 * 4) + (3 * 24px));
   }
   .Background{
-    height: calc(1100px + ((100vw * 0.176327) / 2));
+    height: calc(700px + ((100vw * 0.176327) / 2));
+  }
+  .BgContainer{
+    transform: skewY(-13deg);
   }
 }
 @media only screen and (max-width: 850px) {
   .Grid{
     width: 90%;
-    padding-top: 140px;
+    padding-top: 50px;
+  }
+  .LeftContainer{
+    width: 100%;
+  }
+  .RightContainer{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Grid{
+    width: 90%;
+    padding-top: 50px;
   }
   .LeftContainer{
     width: 100%;

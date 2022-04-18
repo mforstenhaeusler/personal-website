@@ -78,7 +78,7 @@ function isEmpty(val){
 
 export default function Experiences({ prefix }){
   return (
-    <div className={styles.PublicationsItem}>
+    <div className={styles.ExperienceItem}>
       <div className={styles.Grid}> 
         <div className={styles.LeftContainer}> <p className={styles.Heading}> Experiences </p></div>
         <div className={styles.RightContainer}> 

@@ -1,0 +1,268 @@
+.EducationItem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background: linear-gradient(295.13deg, #F6F2FF 7.21%, #FFFFFF 93.4%), #C4C4C4;*/
+    padding: 140px 0;
+}
+.Grid{
+  width: 1200px;
+  display: flex;
+  gap: 24px;
+}
+.LeftContainer{
+  width: calc(((100% - (5 * 24px)) / 6 * 1) + (0 * 24px));
+}
+.MiddleContainer{
+  width: calc(((100% - (5 * 24px)) / 6 * 4) + (3 * 24px));
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.Title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+}
+.TracklList{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 48px;
+}
+.Track{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.TopContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+}
+.RightTopContainer{
+    display: flex;
+    width: 20%;
+}
+.LeftTopContainer{
+    width: 80%;
+}
+.SchoolLogo{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Icon{
+  width: 24px;
+  height: 24px;
+  position: relative; 
+}
+.School{
+  font-style: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.Degree{
+  font-style: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+
+}
+.Period{
+  font-style: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+  color: grey;
+
+}
+.ArrowSection{
+  width: calc(((100% - (3 * 24px)) / 4 * 1));
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Arrow{
+  width: 24px;
+  height: 24px;
+  position: relative; 
+  margin-top: 16px;
+}
+
+.Content{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 24px 0;
+}
+.ContentTextConatiner{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.ContentSub{
+  width: calc(((100% - (3 * 24px)) / 4 * 3) + (2 * 24px));
+}
+.Player{
+  display: flex;
+  justify-content: space-between;
+}
+.PlayerSeparator{
+  width: 2px;
+  background-color: #000000;
+}
+.PlayerRightContainer{
+  width: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.PlayerHeader{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Author{
+  width: 52px;
+  height: 52px;
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.Text{
+  width: calc(100% - 76px);
+}
+.List{
+  padding-inline-start: 20px;
+}
+.ChallengeContainer{
+  display: flex;
+  gap: 24px;
+}
+.FirstContainer{
+  width: calc(((100% - (3 * 24px)) / 4 * 1) + (0 * 24px)); 
+  display: flex;
+  flex-direction: row-reverse;
+}
+.NextArrow{
+  width: 24px;
+  height: 24px;
+  position: relative; 
+  opacity: 0.5;
+}
+.SecondContainer{
+  width: calc(((100% - (3 * 24px)) / 4 * 1) + (0 * 24px));
+}
+.ChallengeImg{
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+.ThirdContainer{
+  width: calc(((100% - (3 * 24px)) / 4 * 2) + (1 * 24px));
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: -10px;
+}
+
+.Separator{
+  height: 2px;
+  width: 100%;
+  background-color: #D6D6D6;
+}
+
+@media only screen and (max-width: 1300px) {
+  .Grid{
+    width: 1000px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .Grid{
+    width: 800px;
+  }
+  .MiddleContainer{
+    width: calc(((100% - (5 * 24px)) / 6 * 5) + (4 * 24px));
+  }
+  .Paragraph{
+    width: calc(((100% - (4 * 24px)) / 5 * 4) + (3 * 24px));
+  }
+  .TitleSection{
+    width: calc(((100% - (4 * 24px)) / 5 * 1));
+  }
+  .DescriptionSection{
+    width: calc(((100% - (4 * 24px)) / 5 * 3) + (2 * 24px));
+  }
+  .ArrowSection{
+    width: calc(((100% - (4 * 24px)) / 5 * 1));
+  }
+  .FirstContainer{
+    width: calc(((100% - (4 * 24px)) / 4 * 1) + (0 * 24px)); 
+  }
+  .SecondContainer{
+    width: calc(((100% - (4 * 24px)) / 4 * 1) + (0 * 24px));
+  }
+  .ThirdContainer{
+    width: calc(((100% - (4 * 24px)) / 4 * 3) + (2 * 24px));
+  }
+}
+@media only screen and (max-width: 850px) {
+  .Grid{
+    width: 90%;
+    flex-direction: column;
+  }
+  .MiddleContainer{
+    width: 100%;
+    gap: 48px;
+  }
+  .LeftContainer{
+    width: 100%;
+  }
+  .Paragraph{
+    width: 100%;
+  }
+  .TitleSection{
+    width: 30%;
+  }
+  .DescriptionSection{
+    width: 60%;
+  }
+  .ArrowSection{
+    width: 10%;
+  }
+  .ChallengeContainer{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .FirstContainer{
+    width: 10%; 
+  }
+  .SecondContainer{
+    width: 100%
+  }
+  .ThirdContainer{
+    width: 90%
+  }
+  .ChallengeImg{
+    height: 160px;
+  }
+  .TracksItem{
+    padding: 70px 0;
+  }
+  .ContentTextConatiner{
+    width: 100%;
+  }
+  .ContentSub{
+    width: 100%;
+  }
+}

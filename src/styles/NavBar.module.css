@@ -1,74 +1,117 @@
-.NavBarItem {
-    width: 100%;
-    height: 90px;
-    position: absolute;
-    z-index: 1007;
-    display: flex;
+.BgContainer{
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(125.53deg, #211B45 8.83%, #0F2538 99.14%), #C4C4C4;
+  display: flex;
+  justify-content: center;
+  z-index: 1007;
+}
+
+.NavBar{
+  width: 85%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 1008;
+}
+
+.NavBar__Items{
+  font-family: 'Roboto', sans-serif;
+}
+
+.Navbar__Items__right{
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  margin-left: auto;
+}
+
+.Navbar__Link{
+  padding-right: 48px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 21px;
+  opacity: 0.8;
+}
+.Navbar__Link__Brand{
+  padding-right: 24px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  opacity: 0.8;
+}
+.Navbar__Link__toggle{
+  color: white;
+  height: 25px;
+  width: 25px;
+  opacity: 0.8;
+  display: none;
+}
+
+.collapsedBgContainer{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  height: 150px;
+  width: 100%;
+  background: linear-gradient(125.53deg, #211B45 8.83%, #0F2538 99.14%), #C4C4C4;
+
+}
+.collapsedNavMenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  height: 150px;
+  width: 100%;
+  gap: 12px;
+  background: linear-gradient(125.53deg, #211B45 8.83%, #0F2538 99.14%), #C4C4C4;
+  visibility: hidden;
+}
+
+.collapsed__Navbar__Link{
+  padding-right: 24px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 21px;
+  opacity: 0.8;
+}
+
+.collapsed__Navbar__Link:hover,
+.Navbar__Link:hover{
+  font-weight: 200;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1100px) { /*1600*/
+  .Navbar__Items,
+  .Navbar {
     flex-direction: column;
-    align-items: center;
-    background: linear-gradient(125.53deg, #211B45 8.83%, #0F2538 99.14%), #C4C4C4;
-    /*background: linear-gradient(125.53deg, #efe9fe 8%, #fbfafb 99%), #C4C4C4;*/
-    /*background-color: #efe9fe;*/
   }
-  .Grid{
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-  .Logo{
-    display: flex;
-    gap: 24px;
-  }
-  .Header{
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-style: bold;
-    /*color: black;*/
-    color: white;
-  }
-  .subLogo{
-    width: calc(((100% - (3 * 24px)) / 4 * 1) + (0 * 24px));
-    display: flex;
+  .Navbar__Items__right {
     flex-direction: column;
   }
-  .Nav{
-    display: flex;
-    justify-content: flex-end;
-    gap: 48px;
+  .Navbar__Link{
+    display: none;
   }
-  .Link {
+  .Navbar__Link__toggle {
+    align-self: flex-end;
+    display: initial;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    font-size: 16px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    /*color: black;*/
-    color: white;
-    opacity: 0.8;
   }
-  @media only screen and (max-width: 1300px) {
-    .Grid{
-      width: 1000px;
-    }
+  .Navbar__Link__toggle__Icon{
+    height: 10px;
+    width: 10px;
   }
-  @media only screen and (max-width: 1100px) {
-    .Grid{
-      width: 800px;
-    }
-  }
-  @media only screen and (max-width: 850px) {
-    .Grid{
-      width: 90%;
-    }
-    .Nav{
-      display: none;
-    }
-    .NavBarItem {
-      background: transparent;
-      position: absolute;
-    }
-  }
+}

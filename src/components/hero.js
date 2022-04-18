@@ -1,6 +1,9 @@
 import styles from '../styles/Hero.module.css'
 import Image from '../components/Image.js';
 import Link from 'next/link'
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaGithub, FaLinkedinIn, FaInstagram, MdOutlineEmail } from 'react-icons/fa';
 /*import Headline1 from './components/headline1.js';*/
 
 
@@ -35,16 +38,20 @@ export default function Hero({ prefix }){
         <div className={styles.BottomContainer}>
             <div className={styles.Logo}> 
                 <a className={styles.subLogo} href="https://www.linkedin.com/in/maximilian-forstenhaeusler/">
-                <Image src={prefix + "/assets/linkedIn.svg"} alt="linkedIn" width={55} height={55}  objectFit="contain" />
+                <FaLinkedinIn size={32}/>                
+                {/*<Image src={prefix + "/assets/linkedIn.svg"} alt="linkedIn" width={55} height={55}  objectFit="contain" />*/}
                 </a>
                 <a className={styles.subLogo} href="#">
-                <Image src={prefix + "/assets/insta.svg"} alt="insta" width={55} height={55}  objectFit="contain" />
+                  <FaInstagram size={32}/>
+                {/*<Image src={prefix + "/assets/insta.svg"} alt="insta" width={55} height={55}  objectFit="contain" />*/}
                 </a>
                 <a className={styles.subLogo} href="https://github.com/mforstenhaeusler">
-                <Image src={prefix + "/assets/GitHub-Mark-Light.png"} alt="github" width={55} height={55} objectFit="contain" />
+                <FaGithub size={32}/>
+                {/*<Image src={prefix + "/assets/GitHub-Mark-Light.png"} alt="github" width={55} height={55} objectFit="contain" />*/}
                 </a>
-                <a className={styles.subLogo} href="mailto:contact@tum-ai.com">                 
-                <Image src={prefix + "/assets/email-icon-2.svg"} alt="github" layout="fill" objectFit="cover" />
+                <a className={styles.subLogo} href="mailto:contact@tum-ai.com"> 
+                <FontAwesomeIcon icon={faEnvelope} style={{ color: "white" }}/>               
+                {/*<Image src={prefix + "/assets/email-icon-2.svg"} alt="github" width={55} height={55} objectFit="contain" />*/}
               </a>
             </div>
         </div>

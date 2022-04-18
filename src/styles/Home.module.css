@@ -1,94 +1,32 @@
 .container {
+  min-height: 97vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
-  overflow: hidden;
   background-color: #FFFFFF;
+  overflow: hidden;
+  flex: 1;
+}
+
+.NavBar{
+  flex-grow: 0;
+  overflow: hidden;
 }
 
 .Footer {
+  flex-grow: 0 ;
   width: 100%;
   height: 100px;
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   align-items: center;
   /*background: #100D21;*/
   background: linear-gradient(125.53deg, #211B45 8.83%, #0F2538 99.14%), #C4C4C4;
-  justify-content: center;
-}
-.Grid{
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-.Container{
-  width: calc(((100% - (5 * 24px)) / 6 * 4) + (3 * 24px));
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.Top{
-  width: 100%;
-  font-family: IBM Plex Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
-  color: #FFFFFF;
-}
-.Middle{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-.FirstContainer{
-  width: calc(((100% - (3 * 24px)) / 4 * 2) + (1 * 24px));
-  padding-right: 15%;
-  font-family: IBM Plex Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 0.5);
-}
-.SecondContainer{
-  width: calc(((100% - (3 * 24px)) / 4 * 1) + (0 * 24px));
-  display: flex;
-  flex-direction: column;
-}
-.ThirdContainer{
-  width: calc(((100% - (3 * 24px)) / 4 * 1) + (0 * 24px));
-  display: flex;
-  flex-direction: column;
-}
-.Link{
-  font-family: IBM Plex Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
-  text-align: right;
-  color: rgba(255, 255, 255, 0.7);
-  cursor: pointer;
-
-}
-.Bottom{
-  display: flex;
-  gap: 24px;
-}
-.SocialWrapper{
-  width: 32px;
-  height: 32px;
-  position: relative;
-  cursor: pointer;
-}
-
-.OuttroItem{
-  width: 100%;
-  position: relative;
-  padding-bottom: 200px;
+  /*justify-content: center;*/
+  padding-bottom: 30px;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -105,25 +43,26 @@
   }
 }
 @media only screen and (max-width: 850px) {
-  .Footer {
-    height: 400px;
-  }
   .Grid{
     width: 90%;
   }
-  .Container{
+  .Footer{
+    padding-top: -400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Grid{
+    width: 90%;
+    padding-top: 50px;
+  }
+  .LeftContainer{
     width: 100%;
   }
-  .Middle{
-    flex-direction: column;
-  }
-  .FirstContainer{
+  .RightContainer{
     width: 100%;
   }
-  .SecondContainer{
-    width: 100%;
-  }
-  .ThirdContainer{
-    width: 100%;
+  .Footer{
+    margin-top: 00px;
   }
 }
