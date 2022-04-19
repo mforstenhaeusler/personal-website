@@ -64,6 +64,8 @@ jobs:
         working-directory: src
     env:
       NEXT_PUBLIC_BASE_PATH: /personal-website-template
+      NEXT_PUBLIC_CV_LINK: "https://docs.google.com/document/d/e/2PACX-1vRIkVDOmOmWDrPTttWl4sNLSTFjxBI2_iYXjCsNl4wgf_-Y0tp-1VLh9zruJ9l8kMfM8uP1k5wyvWLQ/pub?embedded=true"
+      NEXT_PUBLIC_EMAIL: maxiforstenhaeusler@gmail.com
 
     steps:
       - name: Checkout 🛎️

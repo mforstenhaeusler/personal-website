@@ -62,6 +62,14 @@
     color: black;
     margin-top: 7px;
 }
+.CardDescription{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: grey;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
 
 .CardLinks{
     margin-top: 35px;

@@ -88,6 +88,9 @@
   opacity: 0.8;
 }
 
+.Navbar__Link__Brand:hover{
+  opacity: 1;
+}
 .collapsed__Navbar__Link:hover,
 .Navbar__Link:hover{
   font-weight: 200;

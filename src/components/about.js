@@ -3,17 +3,22 @@ import ChapterBar from './chapterBar'
 
 
 const data = {
-  "title": "We at TUM.ai are thrilled to have you on board and can't wait to hear what you and your team come up with! 🚀",
-  "paragraph_highlighted": "Makeathon is a 48-hour virtual challenge in which motivated students and young professionals develop a working AI solution for a real-world business case.",
-  "paragraph": " Innovators of tomorrow work together in interdisciplinary teams on developing a prototype for the challenges in Education, Environment, and MedTech tracks. As the largest student-organized Makeathon in Germany, you can expect numerous exciting speakers, challenges, cool prizes, and excellent opportunities to meet like-minded people and connect with industry leaders, start-ups, and research groups. Due to the ongoing Corona Pandemic, all events will be held online.",
+  "title": "",
+  "paragraph_highlighted": "",
+  "paragraph": "I am currently pursing my graduate studies at the Technical Univeristy of Munich (TUM). Along side my studies, I work as a working \
+  student at BMW, focussing on digitalizing of engineering research, development and production processes through the application of artificial \
+  intelligence. Further, I am an active member of a student organization centered around artifically intelligence, where I lead the \
+  software development of web and cloud based applications. In general, I am a very open-minded person and eager to learn and \
+  expand my knowledge about artifical intelligence, data anlytics, robotics and its applications.",
   "button": "Find out more about me!",
-  "button_link": "https://www.tum-ai.com/",
+  "button_link": "/personal",
+  "cvlink": "/cv",
   "chapter_title": "About me",
   "chapter_number": "01",
 }
 
 
-export default function About(){
+export default function About({prefix}){
   return <div className={styles.AboutItem}>
     <div className={styles.Description}>
       <div className={styles.Grid}>
@@ -27,9 +32,13 @@ export default function About(){
             {/*<Paragraph1 className={styles.Paragraph} highlightedContent={data.paragraph_highlighted} normalContent={data.paragraph} isDarkBackground={false}/>*/}
             {data.paragraph}
           </div>
-          <div >
-            {/*<Button content={data.button} link="https://www.tum-ai.com/" isDarkBackground={false}/>*/}
-            <a className={styles.Button} href="#"> {data.button} </a>
+          <div className={styles.ButtonGroup}> 
+            <div>
+              <a className={styles.Button} href={prefix + data.button_link}> {data.button} </a>
+            </div>
+            <div>
+              <a className={styles.ButtonCV} href={prefix + data.cvlink} target="_blank" rel="noreferrer noopener"> CV </a>
+            </div>
           </div>
         </div>
       </div>

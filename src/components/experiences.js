@@ -12,7 +12,7 @@ const data = {
             "endDate": " ",
             "location": "Munich, Germany",
             "description": "Working student position focussing on deep learning applications and evaluations in an engineering scope.",
-            "img": "/assets/BMW_logo_(gray).svg",
+            "img": "/logos/BMW_logo_(gray).svg",
         },
         {
             "company":"TUM.ai",
@@ -23,7 +23,7 @@ const data = {
             "endDate": " ",
             "location": "Munich, Germany",
             "description": "TUM.ai is a student initiative located in Munich, that runs projects with Industry Partners, Workshops and Hackathons around the topic of Artificial Intelligence.",
-            "img": "/assets/tumai_blackVioletlarge_logo.png",
+            "img": "/logos/tumai_blackVioletlarge_logo.png",
         },
         {
             "company":"SAP",
@@ -34,7 +34,7 @@ const data = {
             "endDate": "January 2022",
             "location": "Munich, Germany",
             "description": "",
-            "img": "/assets/SAP_logo.svg",
+            "img": "/logos/SAP_logo.svg",
         },
         {
             "company":"George Washington University - School of Engineering and Applied Sciences",
@@ -45,7 +45,7 @@ const data = {
             "endDate": "May 2020",
             "location": "Washington, D.C., USA",
             "description": "",
-            "img": "/assets/GW_SEAS_logo.jpeg",
+            "img": "/logos/GW_SEAS_logo.jpeg",
         },
         {
             "company":"Bosch",
@@ -56,7 +56,7 @@ const data = {
             "endDate": "August 2019",
             "location": "Schwäbisch Gmünd, Germany",
             "description": "Research and Development on the sensor mechanics of the torque sensor and steering angle sensor used in electronic power steering racks.",
-            "img": "/assets/Bosch-Logo.svg",
+            "img": "/logos/Bosch-Logo.svg",
         },
         {
             "company":"Bentz Jaz Group",
@@ -67,7 +67,7 @@ const data = {
             "endDate": "December 2018",
             "location": "Singapore, Singapore",
             "description": "Design Project via National University of Singapore School of Engineering with Bentz Jaz Singapore Pte Ltd. Designed and constructed from scratch a Smart Pesticide Dispensing Vehicle following guidelines from Bentz Jaz, where I led the electronics and software team and final assembly. Applied for a patent.",
-            "img": "/assets/GW_SEAS_logo.jpeg",
+            "img": "/logos/GW_SEAS_logo.jpeg",
         },
     ],
 }

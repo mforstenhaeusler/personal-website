@@ -1,33 +1,38 @@
-.AboutItem{
-  width: 100%;
-  height: 100vh;
-  margin-top: -850px;
-}
 .Description{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background:#FFFFFF;
-  padding-top: 800px;
+  justify-content: center;
+  background: linear-gradient(295.13deg, #F6F2FF 7.21%, #FFFFFF 93.4%), #C4C4C4;
+  width: 100%;
+  height: 700px;
   gap: 48px;
 }
 .Grid{
   width: 1200px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
 }
-.LeftContainer{
+.RightContainer{
   width: calc(((100% - (5 * 24px)) / 6 * 1) + (0 * 24px));
+  height: 450px;
 }
 .MiddleContainer{
   width: calc(((100% - (5 * 24px)) / 6 * 4) + (3 * 24px));
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 24px;
+  height: 400px;
+  font-family: 'Robot', sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  padding-top: -75px;
 }
 .Paragraph{
   width: 100%;
-  line-height: 21px;
+  font-weight: 200;
+  font-size: 16px;
 }
 .Button{
   width: fit-content;
@@ -38,63 +43,38 @@
   width: calc(100% - 76px);
 }
 
-.ButtonGroup{
-  display: flex;
-  flex-direction: row;
-  gap: 48px;
-}
-.Button{
-  border: 2px solid #38159D;
-  border-radius: 10px;
-  padding: 10px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #38159D;
-}
-.Button:hover{
-  background-color:#38159D;
-  color: white;
-}
-
 .ButtonCV{
   border: 2px solid #38159D;
   border-radius: 10px;
   padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  color: #38159D;
+}
+.ButtonCV:hover{
   background-color: #38159D;
   color: white;
 }
-.ButtonCV:hover{
-  background-color: white;
-  color: #38159D;
-}
+
 @media only screen and (max-width: 1300px) {
   .Grid{
     width: 1000px;
   }
 }
 @media only screen and (max-width: 1100px) {
-  .AboutItem{
-    margin-bottom: 50px;
-  }
   .Grid{
     width: 800px;
   }
   .MiddleContainer{
-    width: calc(((100% - (5 * 24px)) / 6 * 5) + (4 * 24px));
+    width: 100%;
   }
 }
 @media only screen and (max-width: 850px) {
-  .AboutItem{
-    margin-bottom: 100px;
-  }
   .Grid{
     width: 80%;
     flex-direction: column;

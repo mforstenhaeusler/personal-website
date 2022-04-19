@@ -19,6 +19,8 @@ const data = {
 }
 
 export default function Hero({ prefix }){
+  const email = process.env.NEXT_PUBLIC_EMAIL;
+  console.log(email);
   return <div className={styles.HeroItem}>
     <div className={styles.Background}>
       <div className={styles.BgContainer}>
@@ -41,7 +43,7 @@ export default function Hero({ prefix }){
                 <FaLinkedinIn size={32}/>                
                 {/*<Image src={prefix + "/assets/linkedIn.svg"} alt="linkedIn" width={55} height={55}  objectFit="contain" />*/}
                 </a>
-                <a className={styles.subLogo} href="#">
+                <a className={styles.subLogo} href="https://www.instagram.com/max_for32/?hl=en">
                   <FaInstagram size={32}/>
                 {/*<Image src={prefix + "/assets/insta.svg"} alt="insta" width={55} height={55}  objectFit="contain" />*/}
                 </a>
@@ -49,7 +51,7 @@ export default function Hero({ prefix }){
                 <FaGithub size={32}/>
                 {/*<Image src={prefix + "/assets/GitHub-Mark-Light.png"} alt="github" width={55} height={55} objectFit="contain" />*/}
                 </a>
-                <a className={styles.subLogo} href="mailto:contact@tum-ai.com"> 
+                <a className={styles.subLogo} href={"mailto:" + email}> 
                 <FontAwesomeIcon icon={faEnvelope} style={{ color: "white" }}/>               
                 {/*<Image src={prefix + "/assets/email-icon-2.svg"} alt="github" width={55} height={55} objectFit="contain" />*/}
               </a>
@@ -57,7 +59,7 @@ export default function Hero({ prefix }){
         </div>
       </div>
       <div className={styles.RightContainer}>
-        <Image src={prefix +  "/assets/IMG_0443.JPG"} alt={"LinkedIn"} width={280} height={400} objectFit="cover" className={styles.headshot}/>
+        <Image src={prefix +  "/assets/IMG_0443.JPG"} alt={"Profile-IMG"} width={280} height={400} objectFit="cover" className={styles.headshot}/>
       </div>
     </div>
   </div>

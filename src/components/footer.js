@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FaGithub, FaLinkedinIn, FaInstagram, MdOutlineEmail } from 'react-icons/fa';
 
 export default function Footer({ prefix }){
+  const email = process.env.EMAIL;
     return (
      <footer className={styles.Footer}>
         <div className={styles.Grid}>
@@ -15,7 +16,7 @@ export default function Footer({ prefix }){
                 <FaLinkedinIn size={32} style={{ color: "white" }}/>                
                 {/*<Image src={prefix + "/assets/linkedIn.svg"} alt="linkedIn" width={55} height={55}  objectFit="contain" />*/}
                 </a>
-                <a className={styles.SocialWrapper} href="#">
+                <a className={styles.SocialWrapper} href="https://www.instagram.com/max_for32/?hl=en">
                   <FaInstagram size={32} style={{ color: "white" }}/>
                 {/*<Image src={prefix + "/assets/insta.svg"} alt="insta" width={55} height={55}  objectFit="contain" />*/}
                 </a>
@@ -23,7 +24,7 @@ export default function Footer({ prefix }){
                 <FaGithub size={32} style={{ color: "white" }}/>
                 {/*<Image src={prefix + "/assets/GitHub-Mark-Light.png"} alt="github" width={55} height={55} objectFit="contain" />*/}
                 </a>
-              <a className={styles.SocialWrapper} href="mailto:contact@tum-ai.com"> 
+              <a className={styles.SocialWrapper} href={"mailto:"+email}> 
                 <FontAwesomeIcon icon={faEnvelope} style={{ color: "white" }}/>   
               </a>
             </div>

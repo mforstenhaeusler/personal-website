@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     /*background: linear-gradient(295.13deg, #F6F2FF 7.21%, #FFFFFF 93.4%), #C4C4C4;*/
-    padding: 140px 0;
+    padding: 140px;
 }
 .Grid{
   width: 1200px;
@@ -101,42 +101,36 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin: 24px 0;
+  margin: 10px 0;
 }
 .ContentTextConatiner{
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  font-family: 'Roboto', sans-serif;
 }
 .ContentSub{
-  width: calc(((100% - (3 * 24px)) / 4 * 3) + (2 * 24px));
+  width: calc(((100% - (1 * 24px)) / 4 * 3) + (3 * 24px));
 }
-.Player{
-  display: flex;
-  justify-content: space-between;
+.DescriptionHeader{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+
 }
-.PlayerSeparator{
-  width: 2px;
-  background-color: #000000;
+.Description{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
 }
-.PlayerRightContainer{
-  width: calc(100% - 30px);
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.GradeDE{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
 }
-.PlayerHeader{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.GradeUS{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
 }
-.Author{
-  width: 52px;
-  height: 52px;
-  position: relative;
-  border-radius: 26px;
-  overflow: hidden;
-  cursor: pointer;
+.FocusTopics{
+  margin-top: 10px;
 }
 .Text{
   width: calc(100% - 76px);

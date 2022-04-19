@@ -10,7 +10,8 @@ const data = {
             "img": "/assets/publication1.png",
             "authers": "Maximilian Forstenhäusler, Enrique A. López-Guerra, Santiago D. Solares",
             "pdf": "http://casopisi.junis.ni.ac.rs/index.php/FUMechEng/article/view/6927/3904",
-            "date": "April 2021"
+            "date": "April 2021",
+            "content": "We provide guidelines for modeling linear viscoelastic materials containing an arbitrary number of characteristic times, under atomic force microscopy (AFM) characterization.",
         },
     ],
 }
@@ -33,6 +34,7 @@ export default function Publications({ prefix }){
                 <div className={styles.cardContent}> 
                 <div className={styles.CardHeader}> {pub.title}</div>
                 <div className={styles.CardSubHeader}>{pub.authers + ", " + pub.date}</div>
+                <div className={styles.CardDescription}>{pub.content} </div>
                 <div className={styles.CardLinks}>  
                     <a href={prefix + pub.link} className={styles.button}> Paper </a>
                     <a href={prefix + pub.github} className={styles.button}> Code </a>
