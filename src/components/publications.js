@@ -36,9 +36,9 @@ export default function Publications({ prefix }){
                 <div className={styles.CardSubHeader}>{pub.authers + ", " + pub.date}</div>
                 <div className={styles.CardDescription}>{pub.content} </div>
                 <div className={styles.CardLinks}>  
-                    <a href={prefix + pub.link} className={styles.button}> Paper </a>
-                    <a href={prefix + pub.github} className={styles.button}> Code </a>
-                    <a href={prefix + pub.pdf} className={styles.button}> PDF </a>
+                    <a href={pub.link} className={styles.button}> Paper </a>
+                    <a href={pub.github} className={styles.button}> Code </a>
+                    <a href={pub.pdf} className={styles.button}> PDF </a>
                 </div>
                 </div>  
             </div>

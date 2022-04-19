@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FaGithub, FaLinkedinIn, FaInstagram, MdOutlineEmail } from 'react-icons/fa';
 
 export default function Footer({ prefix }){
-  const email = process.env.EMAIL;
+  const email = process.env.NEXT_PUBLIC_EMAIL;
     return (
      <footer className={styles.Footer}>
         <div className={styles.Grid}>

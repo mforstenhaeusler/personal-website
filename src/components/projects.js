@@ -81,8 +81,8 @@ export default function Projects({prefix}){
                   <div className={styles.CardSubHeader}>{project.authers}, {project.date} </div>
                   <div className={styles.CardDescription}>{project.content} </div>
                   <div className={styles.CardLinks}> 
-                    <a href={prefix + project.code} className={styles.button}> Code </a>
-                    <a href={prefix + project.slides} className={styles.button}> Slides </a>
+                    <a href={project.code} className={styles.button}> Code </a>
+                    <a href={project.slides} className={styles.button}> Slides </a>
                   </div>
                 </div>                
               </div>
@@ -99,8 +99,8 @@ export default function Projects({prefix}){
                   <div className={styles.CardSubHeader}>{project.authers}, {project.date} </div>
                   <div className={styles.CardDescription}>{project.content} </div>
                   <div className={styles.CardLinks}> 
-                    <a href={prefix + project.link} className={styles.button}> Paper </a>
-                    <a href={prefix + project.pdf} className={styles.button}> PDF </a>
+                    <a href={project.link} className={styles.button}> Paper </a>
+                    <a href={project.pdf} className={styles.button}> PDF </a>
                   </div>
                 </div>                
             </div>
@@ -117,7 +117,7 @@ export default function Projects({prefix}){
                   <div className={styles.CardSubHeader}>{project.authers}, {project.date} </div>
                   <div className={styles.CardDescription}>{project.content} </div>
                   <div className={styles.CardLinks}> 
-                    <a href={prefix + project.code} className={styles.button}> Code </a>
+                    <a href={project.code} className={styles.button}> Code </a>
                   </div>
                 </div>                
               </div>
@@ -134,7 +134,7 @@ export default function Projects({prefix}){
                     <div className={styles.CardSubHeader}>{project.authers}, {project.date} </div>
                     <div className={styles.CardDescription}>{project.content} </div>
                     <div className={styles.CardLinks}> 
-                      <a href={prefix + project.pdf} className={styles.button}> PDF </a>
+                      <a href={project.pdf} className={styles.button}> PDF </a>
                     </div>
                   </div>                
                 </div>
@@ -151,7 +151,7 @@ export default function Projects({prefix}){
                     <div className={styles.CardSubHeader}>{project.authers}, {project.date} </div>
                     <div className={styles.CardDescription}>{project.content} </div>
                     <div className={styles.CardLinks}> 
-                      <a href={prefix + project.code} className={styles.button}> Code </a>
+                      <a href={project.code} className={styles.button}> Code </a>
                     </div>
                   </div>                
                 </div>
