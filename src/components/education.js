@@ -163,10 +163,10 @@ export default function Personal({prefix}){
                     </div>
                   <div className={styles.ArrowSection}>
                     {trackIndex == index ? <div className={styles.Arrow} style={{transform: "rotate(180deg)"}}>
-                      <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                      <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                     </div> :
                     <div className={styles.Arrow}>
-                      <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                      <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                     </div> }
                   </div>
                 </div>
@@ -208,10 +208,10 @@ export default function Personal({prefix}){
                     </div>
                   <div className={styles.ArrowSection}>
                     {trackIndex == index ? <div className={styles.Arrow} style={{transform: "rotate(180deg)"}}>
-                      <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                      <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                     </div> :
                     <div className={styles.Arrow}>
-                      <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                      <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                     </div> }
                   </div>
                 </div>
@@ -261,10 +261,10 @@ export default function Personal({prefix}){
                     </div>
                   <div className={styles.ArrowSection}>
                     {trackIndex == index ? <div className={styles.Arrow} style={{transform: "rotate(180deg)"}}>
-                      <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                      <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                     </div> :
                     <div className={styles.Arrow}>
-                      <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                      <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                     </div> }
                   </div>
                 </div>
@@ -314,10 +314,10 @@ export default function Personal({prefix}){
                     </div>
                   <div className={styles.ArrowSection}>
                     {trackIndex == index ? <div className={styles.Arrow} style={{transform: "rotate(180deg)"}}>
-                      <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                      <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                     </div> :
                     <div className={styles.Arrow}>
-                      <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                      <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                     </div> }
                   </div>
                 </div>
@@ -375,10 +375,10 @@ export default function Personal({prefix}){
                   </div>
                 <div className={styles.ArrowSection}>
                   {trackIndex == index ? <div className={styles.Arrow} style={{transform: "rotate(180deg)"}}>
-                    <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                    <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                   </div> :
                   <div className={styles.Arrow}>
-                    <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                    <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                   </div> }
                 </div>
               </div>
@@ -420,10 +420,10 @@ export default function Personal({prefix}){
                 </div>
               <div className={styles.ArrowSection}>
                 {trackIndex == index ? <div className={styles.Arrow} style={{transform: "rotate(180deg)"}}>
-                  <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                  <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                 </div> :
                 <div className={styles.Arrow}>
-                  <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                  <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                 </div> }
               </div>
             </div>
@@ -693,10 +693,10 @@ export default function Personal({prefix}){
                     </div>
                   <div className={styles.ArrowSection}>
                     {trackIndex == index ? <div className={styles.Arrow} style={{transform: "rotate(180deg)"}}>
-                      <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                      <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                     </div> :
                     <div className={styles.Arrow}>
-                      <Image src={"/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
+                      <Image src={prefix + "/assets/arrow.svg"} alt="arrow" layout="fill" objectFit="cover" />
                     </div> }
                   </div>
                 </div>
