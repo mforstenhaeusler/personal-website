@@ -12,13 +12,14 @@ const data = {
   expand my knowledge about artifical intelligence, data anlytics, robotics and its applications.",
   "button": "Find out more about me!",
   "button_link": "/personal",
-  "cvlink": "/cv",
+  "cvlink": "",
   "chapter_title": "About me",
   "chapter_number": "01",
 }
 
 
 export default function About({prefix}){
+  const cvLink = process.env.NEXT_PUBLIC_CV_LINK;
   return <div className={styles.AboutItem}>
     <div className={styles.Description}>
       <div className={styles.Grid}>
@@ -37,7 +38,7 @@ export default function About({prefix}){
               <a className={styles.Button} href={prefix + data.button_link}> {data.button} </a>
             </div>
             <div>
-              <a className={styles.ButtonCV} href={prefix + data.cvlink} target="_blank" rel="noreferrer noopener"> CV </a>
+              <a className={styles.ButtonCV} href={cvLink} target="_blank" rel="noreferrer noopener"> CV </a>
             </div>
           </div>
         </div>

@@ -27,6 +27,7 @@ const data = {
 }
 
 export default function general({prefix}){
+  const cvLink = process.env.NEXT_PUBLIC_CV_LINK;
   return <div className={styles.Description}>
       <div className={styles.Grid}>
         <div className={styles.MiddleContainer}>
@@ -37,7 +38,7 @@ export default function general({prefix}){
               ))}
             </div>
             <div>
-              <a className={styles.ButtonCV} href={prefix + "/cv"} target="_blank" rel="noreferrer noopener"> CV </a>
+              <a className={styles.ButtonCV} href={cvLink} target="_blank" rel="noreferrer noopener"> CV </a>
             </div>
           </div>
           <div className={styles.RightContainer}>
