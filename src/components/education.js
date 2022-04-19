@@ -147,7 +147,7 @@ export default function Personal({prefix}){
                 <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                     <div className={styles.RightTopContainer}>
                         <div className={styles.SchoolLogo}>
-                            <Image src={prefix + track.school_logo} layout="fill" objectFit="cover" />
+                            <Image src={prefix + track.school_logo} layout="fill" objectFit="cover" alt="school_logo"/>
                         </div>
                     </div>
                     <div className={styles.LeftTopContainer}>
@@ -174,7 +174,7 @@ export default function Personal({prefix}){
                   <div className={styles.ContentTextConatiner}>
                     <div className={styles.ContentSub}>  
                       {track.content.map((content, index)=>(
-                        <div>
+                        <div key={index}>
                         <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                         <div key={index} className={styles.Description}> {content.normalContent} </div>
                         <div key={index} className={styles.GradeDE}> Grade (German): {content.grade}</div>
@@ -192,7 +192,7 @@ export default function Personal({prefix}){
                 <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                     <div className={styles.RightTopContainer}>
                         <div className={styles.SchoolLogo}>
-                            <Image src={prefix + track.school_logo} layout="fill" objectFit="cover" />
+                            <Image src={prefix + track.school_logo} layout="fill" objectFit="cover" alt="school_logo" />
                         </div>
                     </div>
                     <div className={styles.LeftTopContainer}>
@@ -219,7 +219,7 @@ export default function Personal({prefix}){
                   <div className={styles.ContentTextConatiner}>
                     <div className={styles.ContentSub}>  
                       {track.content.map((content, index)=>(
-                        <div>
+                        <div key={index}>
                         <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                         <div key={index} className={styles.Description}> {content.normalContent} </div>
                         <div key={index} className={styles.GradeDE}> Grade (German): {content.grade}</div>
@@ -245,7 +245,7 @@ export default function Personal({prefix}){
                 <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                     <div className={styles.RightTopContainer}>
                         <div className={styles.SchoolLogo}>
-                            <Image src={prefix + track.school_logo} layout="fill" objectFit="cover" />
+                            <Image src={prefix + track.school_logo} layout="fill" objectFit="cover" alt="school_logo"/>
                         </div>
                     </div>
                     <div className={styles.LeftTopContainer}>
@@ -272,7 +272,7 @@ export default function Personal({prefix}){
                   <div className={styles.ContentTextConatiner}>
                     <div className={styles.ContentSub}>  
                       {track.content.map((content, index)=>(
-                        <div>
+                        <div key={index}>
                         <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                         <div key={index} className={styles.Description}> {content.normalContent} </div>
                         <div key={index} className={styles.GradeDE}> Grade (German): {content.grade}</div>
@@ -298,7 +298,7 @@ export default function Personal({prefix}){
                 <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                     <div className={styles.RightTopContainer}>
                         <div className={styles.SchoolLogo}>
-                            <Image src={prefix + track.school_logo} layout="fill" objectFit="cover" />
+                            <Image src={prefix + track.school_logo} layout="fill" objectFit="cover" alt="school_logo"/>
                         </div>
                     </div>
                     <div className={styles.LeftTopContainer}>
@@ -325,7 +325,7 @@ export default function Personal({prefix}){
                   <div className={styles.ContentTextConatiner}>
                     <div className={styles.ContentSub}>  
                       {track.content.map((content, index)=>(
-                        <div>
+                        <div key={index}>
                         <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                         <div key={index} className={styles.Description}> {content.normalContent} </div>
                         <div key={index} className={styles.GradeDE}> Grade (German): {content.grade}</div>
@@ -359,7 +359,7 @@ export default function Personal({prefix}){
               <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                   <div className={styles.RightTopContainer}>
                       <div className={styles.SchoolLogo}>
-                          <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" />
+                          <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" alt="school_logo"/>
                       </div>
                   </div>
                   <div className={styles.LeftTopContainer}>
@@ -386,7 +386,7 @@ export default function Personal({prefix}){
                 <div className={styles.ContentTextConatiner}>
                   <div className={styles.ContentSub}>
                     {track.content.map((content, index)=>(
-                      <div>
+                      <div key={index}>
                         <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                         <div key={index} className={styles.Description}> {content.normalContent} </div>
                         <div key={index} className={styles.GradeDE}> Grade (German): {content.grade}</div>
@@ -404,7 +404,7 @@ export default function Personal({prefix}){
             <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                 <div className={styles.RightTopContainer}>
                     <div className={styles.SchoolLogo}>
-                        <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" />
+                        <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" alt="school_logo"/>
                     </div>
                 </div>
                 <div className={styles.LeftTopContainer}>
@@ -431,7 +431,7 @@ export default function Personal({prefix}){
               <div className={styles.ContentTextConatiner}>
                 <div className={styles.ContentSub}>
                   {track.content.map((content, index)=>(
-                    <div>
+                    <div key={index}>
                       <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                       <div key={index} className={styles.Description}> {content.normalContent} </div>
                       <div key={index} className={styles.Grade}> Grade (German): {content.grade}</div>
@@ -465,7 +465,7 @@ export default function Personal({prefix}){
                 <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                     <div className={styles.RightTopContainer}>
                         <div className={styles.SchoolLogo}>
-                            <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" />
+                            <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" alt="school_logo"/>
                         </div>
                     </div>
                     <div className={styles.LeftTopContainer}>
@@ -492,7 +492,7 @@ export default function Personal({prefix}){
                   <div className={styles.ContentTextConatiner}>
                     <div className={styles.ContentSub}>
                         {track.content.map((content, index)=>(
-                          <div>
+                          <div key={index}>
                             <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                             <div key={index} className={styles.Description}> {content.normalContent} </div>
                             <div key={index} className={styles.GradeDE}> Grade (German): {content.grade}</div>
@@ -526,7 +526,7 @@ export default function Personal({prefix}){
             <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                 <div className={styles.RightTopContainer}>
                     <div className={styles.SchoolLogo}>
-                        <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" />
+                        <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" alt="school_logo"/>
                     </div>
                 </div>
                 <div className={styles.LeftTopContainer}>
@@ -553,7 +553,7 @@ export default function Personal({prefix}){
               <div className={styles.ContentTextConatiner}>
                 <div className={styles.ContentSub}>
                     {track.content.map((content, index)=>(
-                      <div>
+                      <div key={index}>
                         <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                         <div key={index} className={styles.Description}> {content.normalContent} </div>
                         <div key={index} className={styles.GradeDE}> Grade (German): {content.grade}</div>
@@ -571,7 +571,7 @@ export default function Personal({prefix}){
             <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                 <div className={styles.RightTopContainer}>
                     <div className={styles.SchoolLogo}>
-                        <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" />
+                        <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" alt="school_logo"/>
                     </div>
                 </div>
                 <div className={styles.LeftTopContainer}>
@@ -598,7 +598,7 @@ export default function Personal({prefix}){
               <div className={styles.ContentTextConatiner}>
                 <div className={styles.ContentSub}>
                     {track.content.map((content, index)=>(
-                      <div>
+                      <div key={index}>
                         <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                         <div key={index} className={styles.Description}> {content.normalContent} </div>
                         <div key={index} className={styles.GradeDE}> Grade (German): {content.grade}</div>
@@ -624,7 +624,7 @@ export default function Personal({prefix}){
               <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                   <div className={styles.RightTopContainer}>
                       <div className={styles.SchoolLogo}>
-                          <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" />
+                          <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" alt="school_logo"/>
                       </div>
                   </div>
                   <div className={styles.LeftTopContainer}>
@@ -651,7 +651,7 @@ export default function Personal({prefix}){
                 <div className={styles.ContentTextConatiner}>
                   <div className={styles.ContentSub}>
                       {track.content.map((content, index)=>(
-                        <div>
+                        <div key={index}>
                           <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                           <div key={index} className={styles.Description}> {content.normalContent} </div>
                           <div key={index} className={styles.GradeDE}> Grade (German): {content.grade}</div>
@@ -677,7 +677,7 @@ export default function Personal({prefix}){
                 <div className={styles.TopContainer} onClick={()=>trackIndex == index ? setTrackIndex(undefined) : setTrackIndex(index)}>
                     <div className={styles.RightTopContainer}>
                         <div className={styles.SchoolLogo}>
-                            <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" />
+                            <Image src={prefix + track.school_logo} width={100} height={50} objectFit="cover" alt="school_logo"/>
                         </div>
                     </div>
                     <div className={styles.LeftTopContainer}>
@@ -704,7 +704,7 @@ export default function Personal({prefix}){
                   <div className={styles.ContentTextConatiner}>
                     <div className={styles.ContentSub}>
                         {track.content.map((content, index)=>(
-                          <div>
+                          <div key={index}>
                           <div key={index} className={styles.DescriptionHeader}> {content.highlightedContent} </div>
                           <div key={index} className={styles.Description}> {content.normalContent} </div>
                           <div key={index} className={styles.GradeDE}> Grade (German): {content.grade}</div>

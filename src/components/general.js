@@ -33,7 +33,7 @@ export default function general({prefix}){
             {data.title}
             <div className={styles.Paragraph}>
               {data.paragraph.map((para, index)=>(
-                <p> {para.p}</p>
+                <p key={index}> {para.p}</p>
               ))}
             </div>
             <div>
