@@ -85,7 +85,7 @@ export default function Experiences({ prefix }){
         {data.experiences.map((ex, index)=>{
             if (isEmpty(ex.endDate)){
                 return(
-                <a key={index} className={styles.Card} href={prefix + ex.link}> 
+                <a key={index} className={styles.Card} href={ex.link}> 
                     <div className={styles.CardGrid}>
                         <div className={styles.CardLeftContainer}> 
                             <div className={styles.CardIMG}> 
@@ -107,7 +107,7 @@ export default function Experiences({ prefix }){
                 )
             } else {
                 return (
-                <a key={index} className={styles.Card} href={prefix + ex.link}> 
+                <a key={index} className={styles.Card} href={ex.link}> 
                     <div className={styles.CardGrid}>
                         <div className={styles.CardLeftContainer}> 
                             <div className={styles.CardIMG}> 
