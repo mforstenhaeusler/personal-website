@@ -35,7 +35,7 @@ export default function About({prefix}){
           </div>
           <div className={styles.ButtonGroup}> 
             <div>
-              <a className={styles.Button} href={prefix + data.button_link}> {data.button} </a>
+              <a className={styles.Button} href={data.button_link}> {data.button} </a>
             </div>
             <div>
               <a className={styles.ButtonCV} href={cvLink} target="_blank" rel="noreferrer noopener"> CV </a>
