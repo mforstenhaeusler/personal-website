@@ -1,5 +1,6 @@
 import styles from '../styles/About.module.css'
 import ChapterBar from './chapterBar'
+import Link from 'next/Link'
 
 
 const data = {
