@@ -36,8 +36,8 @@ export default function About({prefix}){
           </div>
           <div className={styles.ButtonGroup}> 
             <div>
-              <Link href="/">
-                <a className={styles.Button} href={prefix + data.button_link}> {data.button} </a>
+              <Link href={prefix + data.button_link}>
+                <a className={styles.Button}> {data.button} </a>
               </Link>
             </div>
             <div>
