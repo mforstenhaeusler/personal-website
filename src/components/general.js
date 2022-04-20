@@ -13,12 +13,12 @@ const data = {
     By then I had drop football and purely focussed on swimmiing as my extra curicular activity. In 2015, I was able to qualifiy for the Junior National Team and \
     competed at the 1st European Games in Baku."},
     {"p": "After completion of the Abitur, I was fortunate to get the opportunity to move to Washington D.C. to continue \
-    swimming and of course academic, where I studied Mechanical Engineering (B.Sc.) and was aprt of the Dvision I Swimming and Diving Team."},
+    swimming and of course academia, where I studied Mechanical Engineering (B.Sc.) and was aprt of the Dvision I Swimming and Diving Team."},
     {"p":"After completing my Bachelor's Degree in 2020, I started my graduate studies at the Technical University of Munich. Along side my studies, I work as a working student \
     at BMW, focussing on digitalizing of engineering research, development and production processes through the application of artificial intelligence.\
     Further, I am an active member of a student organization centered around artifically intelligence, where I lead the software development of web \
     and cloud based applications. I am a very open-minded person and eager to learn and expand my knowledge about artifical intelligence, \
-    data anlytics, robotics and its applications."}
+    data anlytics, AI in science, robotics and its applications."}
   ],
   "button": "Find out more about me!",
   "button_link": "https://www.tum-ai.com/",
