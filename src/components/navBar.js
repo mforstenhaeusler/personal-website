@@ -29,19 +29,21 @@ const navLinks = [
 export default function NavBar({ firstname, lastname }){
   const [isNavMenuCollapsed, setIsNavMenuCollapsed] = useState(true);
 
-  const handleNavMenuCollapse = () => {
+  const handleNavMenuCollapse = (event) => {
     if (!isNavMenuCollapsed) {
       setIsNavMenuCollapsed(true);
       document.getElementById("collapsedNavMenu").style.visibility = "visible";
       document.getElementById("menuIcon").style.transition = "0.5s";
       document.getElementById("menuIcon").style.transform = "rotate(180deg)";
       document.getElementById("bgContainer").style.height = "230px";
+      event.stopPropagation();
     } else {
       setIsNavMenuCollapsed(false);
       document.getElementById("collapsedNavMenu").style.visibility = "hidden";
       document.getElementById("menuIcon").style.transition = "0.5s";
       document.getElementById("menuIcon").style.transform = "rotate(0deg)";
       document.getElementById("bgContainer").style.height = "80px";
+      event.stopPropagation();
     }
   };
 
@@ -60,18 +62,6 @@ export default function NavBar({ firstname, lastname }){
             </Link>            
           )
         })}
-        {/*<Link href={"/"}>
-          <a href={"/"} className={styles.Navbar__Link}> Home </a>
-        </Link>
-        <Link href={"/experience"}>
-          <a href={"/experience"} className={styles.Navbar__Link}> Experience </a>
-        </Link>
-        <Link href={"/publications_projects"}>
-          <a href={"/publications_projects"} className={styles.Navbar__Link}> Publications / Projects </a>
-        </Link>
-        <Link href={"/personal"}>
-          <a href={"/personal"} className={styles.Navbar__Link}> Personal </a>
-      </Link>*/}
         <div className={styles.Navbar__Link__toggle} onClick={handleNavMenuCollapse} id="menuIcon"> 
           <FontAwesomeIcon className={styles.toogle} icon={faBars}/>
         </div> 
@@ -81,16 +71,13 @@ export default function NavBar({ firstname, lastname }){
         {navLinks.map((link, index)=>{
             return(
               <Link key={index} href={link.path}>
-                <a key={index} className={styles.collapsed__Navbar__Link}> {link.name} </a>
+                <a key={index} className={styles.collapsed__Navbar__Link} onClick={handleNavMenuCollapse}> {link.name} </a>
               </Link>            
             )
         })}
       </div>
       {/*</div>*/}
     </div>
-    
-    
-    
     
     {/*<div className={styles.Grid}>
       <div className={styles.Logo}> 

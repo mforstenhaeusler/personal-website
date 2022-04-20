@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FaGithub, FaLinkedinIn, FaInstagram, MdOutlineEmail } from 'react-icons/fa';
+import ChapterBar from './chapterBar'
 /*import Headline1 from './components/headline1.js';*/
 
 
@@ -18,9 +19,24 @@ const data = {
   "universityLink": "https://www.tum.de/" 
 }
 
+const dataAbout = {
+  "title": "",
+  "paragraph_highlighted": "",
+  "paragraph": "I am currently pursing my graduate studies at the Technical Univeristy of Munich (TUM). Along side my studies, I work as a working \
+  student at BMW, focussing on digitalizing of engineering research, development and production processes through the application of artificial \
+  intelligence. Further, I am an active member of a student organization centred around artifically intelligence, where I lead the \
+  software development of web and cloud based applications. In general, I am a very open-minded person and eager to learn and \
+  expand my knowledge about artifical intelligence, data anlytics, robotics and its applications.",
+  "button": "Find out more about me!",
+  "button_link": "/personal",
+  "cvlink": "",
+  "chapter_title": "About me",
+  "chapter_number": "01",
+}
+
 export default function Hero({ prefix }){
   const email = process.env.NEXT_PUBLIC_EMAIL;
-  console.log(email);
+  const cvLink = process.env.NEXT_PUBLIC_CV_LINK;
   return <div className={styles.HeroItem}>
     <div className={styles.Background}>
       <div className={styles.BgContainer}>
@@ -62,5 +78,32 @@ export default function Hero({ prefix }){
         <Image src={prefix +  "/assets/IMG_0443.JPG"} alt={"Profile-IMG"} width={280} height={400} objectFit="cover" className={styles.headshot}/>
       </div>
     </div>
+    {/* About section*/}
+    <div className={styles.AboutDescription}>
+      <div className={styles.AboutGrid}>
+        <div className={styles.AboutLeftContainer}>
+          <ChapterBar number={dataAbout.chapter_number} content={dataAbout.chapter_title} isDarkBackground={false}/>
+        </div>
+        <div className={styles.AboutMiddleContainer}>
+          {/*<Headline1 isH1={false} normalContent={data.title} highlightedContent={""} isDarkBackground={false}/>*/}
+          {dataAbout.title}
+          <div className={styles.AboutParagraph}>
+            {/*<Paragraph1 className={styles.Paragraph} highlightedContent={data.paragraph_highlighted} normalContent={data.paragraph} isDarkBackground={false}/>*/}
+            {dataAbout.paragraph}
+          </div>
+          <div className={styles.AboutButtonGroup}> 
+            <div>
+              <Link href={dataAbout.button_link}>
+                <a className={styles.AboutButton}> {dataAbout.button} </a>
+              </Link>
+            </div>
+            <div>
+              <a className={styles.AboutButtonCV} href={cvLink} target="_blank" rel="noreferrer noopener"> CV </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 }

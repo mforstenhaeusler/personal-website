@@ -50,34 +50,22 @@
   opacity: 0.8;
   display: none;
 }
-
-.collapsedBgContainer{
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  position: fixed;
-  top: 80px;
-  right: 0;
-  height: 150px;
-  width: 100%;
-  background: linear-gradient(125.53deg, #211B45 8.83%, #0F2538 99.14%), #C4C4C4;
-
-}
 .collapsedNavMenu{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  position: fixed;
+  position: absolute;
   top: 80px;
   right: 0;
   height: 150px;
   width: 100%;
+  padding-right: 40px;
   gap: 12px;
   background: linear-gradient(125.53deg, #211B45 8.83%, #0F2538 99.14%), #C4C4C4;
   visibility: hidden;
+  
 }
-
 .collapsed__Navbar__Link{
   padding-right: 24px;
   color: white;
@@ -86,6 +74,7 @@
   font-weight: 200;
   line-height: 21px;
   opacity: 0.8;
+  
 }
 
 .Navbar__Link__Brand:hover{

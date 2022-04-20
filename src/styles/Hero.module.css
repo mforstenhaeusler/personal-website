@@ -125,8 +125,92 @@
 
 }
 
+/* 
+- - - About Section - - -
+*/
+.AboutDescription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:#FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  gap: 48px;
+}
+.AboutGrid{
+  width: 1200px;
+  display: flex;
+  gap: 24px;
+}
+.AboutLeftContainer{
+  width: calc(((100% - (5 * 24px)) / 6 * 1) + (0 * 24px));
+}
+.AboutMiddleContainer{
+  width: calc(((100% - (5 * 24px)) / 6 * 4) + (3 * 24px));
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.AboutParagraph{
+  width: 100%;
+  line-height: 21px;
+}
+.AboutButton{
+  width: fit-content;
+  cursor: pointer;
+}
+
+.AboutText{
+  width: calc(100% - 76px);
+}
+
+.AboutButtonGroup{
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+.AboutButton{
+  border: 2px solid #38159D;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #38159D;
+}
+.AboutButton:hover{
+  background-color:#38159D;
+  color: white;
+}
+
+.AboutButtonCV{
+  border: 2px solid #38159D;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: #38159D;
+  color: white;
+}
+.AboutButtonCV:hover{
+  background-color: white;
+  color: #38159D;
+}
+
+/* 
+screen size adjustments 
+*/
 @media only screen and (max-width: 1300px) {
   .Grid{
+    width: 1000px;
+  }
+  /* About Section */
+  .AboutGrid{
     width: 1000px;
   }
 }
@@ -150,6 +234,13 @@
   .BgContainer{
     transform: skewY(-13deg);
   }
+  /* About Section */
+  .AboutGrid{
+    width: 800px;
+  }
+  .AboutMiddleContainer{
+    width: calc(((100% - (5 * 24px)) / 6 * 5) + (4 * 24px));
+  }
 }
 @media only screen and (max-width: 850px) {
   .Grid{
@@ -162,6 +253,17 @@
   .RightContainer{
     width: 100%;
   }
+  /* About Section */
+  .AboutGrid{
+    width: 80%;
+    flex-direction: column;
+  }
+  .AboutMiddleContainer{
+    width:  100%;
+  }
+  .AboutLeftContainer{
+    margin-top: -600px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -173,6 +275,14 @@
     width: 100%;
   }
   .RightContainer{
+    width: 100%;
+  }
+  /* About Section */
+  .AboutGrid{
+    width: 90%;
+    flex-direction: column;
+  }
+  .AboutDescription{
     width: 100%;
   }
 }

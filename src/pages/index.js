@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Hero prefix={prefix}/>
-      <About prefix={prefix}/>
+      {/*<About prefix={prefix}/>*/}
     </>
   )
 }
