@@ -10,7 +10,7 @@ const data = {
         {"skill": "python", "logo":  "/skills/Python_logo_and_wordmark.svg", "url": "https://www.python.org/", "width": 120, "height": 120},
         {"skill": "pytorch", "logo":  "/skills/Pytorch_logo.png", "url": "https://pytorch.org/", "width": 100, "height": 100},
         {"skill": "numpy", "logo":  "/skills/NumPy_logo_2020.svg", "url": "https://numpy.org/", "width": 100, "height": 100},
-        {"skill": "tensorflow", "logo":  "/skills/Tensorflow_logo.svg", "url": "https://tensorflow.org/", "width": 100, "height": 100},
+        {"skill": "tensorflow", "logo":  "/skills/TensorFlow_logo.svg", "url": "https://tensorflow.org/", "width": 100, "height": 100},
         {"skill": "django", "logo":  "/skills/django-logo.png", "url": "https://django.org/", "width": 80, "height": 80},
         {"skill": "next.js", "logo":  "/skills/Nextjs-logo.svg", "url": "https://nextjs.org/", "width": 70, "height": 70},
         {"skill": "js", "logo":  "/skills/JavaScript-logo.png", "url": "https://www.javascript.com/", "width": 50, "height": 50},
