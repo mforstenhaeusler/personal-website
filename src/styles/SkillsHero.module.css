@@ -1,0 +1,97 @@
+.SkillsItem{
+    display: flex;
+}
+.Grid{
+    width: 100%;
+    padding: 100px;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+.RightContainer{
+    display: flex;
+    height: 130px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.LeftContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Header{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Robot' sans-serif;
+    line-height: 21px;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+.SkillsLogoItem{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.Logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1300px) {
+    .Grid{
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    .Grid{
+        width: 100%;
+        flex-direction: row;
+    }
+    .RightContainer{
+        visibility: hidden;
+    }
+    .LeftContainer{
+        margin-left: 100px;
+    }
+    .SkillsLogoItem{
+        flex-direction: column;
+        gap: 0px;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .Grid{
+      width: 100%;
+      flex-direction: row;
+    }
+    .SkillsLogoItem{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .Header{
+        width: 100%;
+        line-height: 48px;
+        margin-bottom: -10px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Grid{
+        width: 100%;
+        flex-direction: row;
+      }
+      .SkillsLogoItem{
+          flex-direction: column;
+          gap: 0px;
+      }
+    .Header{
+        width: 100%;
+        line-height: 48px;
+        margin-bottom: -10px;
+    }
+  }
