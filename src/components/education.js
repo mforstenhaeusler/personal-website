@@ -55,7 +55,8 @@ const data = {
           {
             "gpa": "3.66",
             "grade": "1,5",
-            "highlightedContent": "Description ", "normalContent": "The Department of Mechanical and Aerospace Engineering (MAE) offers an ABET-accredited Bachelor of Science degree in mechanical engineering and a five-year combined Bachelor of Science and Master of Science degree."},
+            "highlightedContent": "Description ", "normalContent": "The Department of Mechanical and Aerospace Engineering (MAE) offers an ABET-accredited Bachelor \
+            of Science degree in mechanical engineering."},
         ],
         "focus_topics": [
         ],
@@ -96,7 +97,7 @@ const data = {
             "gpa": "3.55",
             "grade": "1,6",
             "highlightedContent": "Description ", 
-            "normalContent": "Geram High School Degree (Abitur)."},
+            "normalContent": "German High School Degree (Abitur)."},
         ],
         "focus_topics": [
         ],

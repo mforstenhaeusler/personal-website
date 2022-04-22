@@ -51,7 +51,7 @@ const data = {
         {
             "company":"Bosch",
             "link":"https://www.bosch.com/",
-            "position": "Intership",
+            "position": "Internship",
             "type": "Full-Time",
             "startDate": "May 2019",
             "endDate": "August 2019",

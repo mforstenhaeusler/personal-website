@@ -276,3 +276,10 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 850px) {
+  .Grid{
+    width: 90%;
+    flex-direction: column;
+    margin-top: -560px;
+  }
+}

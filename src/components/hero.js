@@ -24,7 +24,7 @@ const dataAbout = {
   "paragraph_highlighted": "",
   "paragraph": "Welcome to my website 😊. I am currently pursing my graduate studies at the Technical Univeristy of Munich (TUM). Along side my studies, I am a working \
   student at BMW, focussing on digitalizing engineering research, development and production processes through the application of artificial \
-  intelligence. Further, I am an active member of Germany largest student organization centred around artifical intelligence, where I lead the \
+  intelligence. Further, I am an active member of Germany's largest student organization centered around artifical intelligence, where I lead the \
   software development of web and cloud based applications. In general, I am a very open-minded person and eager to learn and \
   expand my knowledge about artifical intelligence, data analytics, robotics and its applications.",
   "button": "Find out more about me!",
