@@ -28,7 +28,7 @@ export default function Skills({prefix}) {
                     </div>
                     <div className={styles.SkillsLogoItem}> 
                         {data.skills.map((skill, index)=>(
-                            <a key={index} className={styles.Logo} href={skill.url}>
+                            <a key={index} className={styles.Logo} href={skill.url} target="_blank" rel="noreferrer noopener">
                                 <Image src={prefix + skill.logo} alt={skill.skill} width={skill.width} height={skill.height}  objectFit="contain" />
                             </a>
                         ))}
