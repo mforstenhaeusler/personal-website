@@ -132,6 +132,22 @@
 .FocusTopics{
   margin-top: 10px;
 }
+.FocusTopicsText{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+.Lecture{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  margin-bottom: 3px;;
+}
+.Prof{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  color: #38159D;
+  cursor: pointer;
+}
 .Text{
   width: calc(100% - 76px);
 }

@@ -33,9 +33,9 @@ export default function Footer({ prefix }){
             <div className={styles.Text}>
               <p>
                 {"If you like this website, give me a ⭐️ on "} 
-                <a href="https://github.com/mforstenhaeusler/personal-website-template" className={styles.Link}>GitHub</a>
+                <a href="https://github.com/mforstenhaeusler/personal-website" className={styles.Link}>GitHub</a>
                 {" 😉. You can download this template and instructions how to customize it "} 
-              <a href="https://github.com/mforstenhaeusler/personal-website-template" className={styles.Link}>here!</a>
+              <a href="https://github.com/mforstenhaeusler/personal-website" className={styles.Link}>here!</a>
               </p>
             </div>
           </div>

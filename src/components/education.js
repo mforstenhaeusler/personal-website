@@ -31,9 +31,16 @@ const data = {
         {"ft": "Compuer Vision (perception, image processing)"}
       ],
       "lectures" : [
-          {"lecture": "Machine Learning", "prof": "Günneman", "profLink": ""},
-          {"lecture": "Introduction to Deep Learning", "prof": "Niessner", "profLink": ""},
-          {"lecture": "", "prof": "", "profLink": ""},
+          {"lecture": "Machine Learning", "prof": "Prof. Dr. Günneman", "profLink": "https://www.professoren.tum.de/en/guennemann-stephan"},
+          {"lecture": "Introduction to Deep Learning", "prof": " Prof. Dr. Niessner", "profLink": "https://www.professoren.tum.de/en/niessner-matthias"},
+          {"lecture": "Techniques in Artificial Intelligence", "prof": " Prof. Dr.-Ing. Althoff", "profLink": "https://www.in.tum.de/i06/people/prof-dr-ing-matthias-althoff/"},
+          {"lecture": "Computer Vision II: Multiple View Geometry", "prof": "Prof. Dr. Cremers", "profLink": "https://vision.in.tum.de/members/cremers"},
+          {"lecture": "Computer Vision III: Detection, Segmentation, and Tracking", "prof": "Prof. Leal-Taixe", "profLink": "https://dvl.in.tum.de/team/lealtaixe/"},
+          {"lecture": "Advanced Topics in 3D Computer Vision", "prof": "Prof. Dr. Navab", "profLink": "https://campar.in.tum.de/Main/NassirNavab.html"},
+          {"lecture": "Advanced Practical Course - Application Challenges for Machine Learning (IBM Power AI)", "prof": "", "profLink": ""},
+          {"lecture": "Seminar - Topics in Quantum Computing", "prof": "Prof. Dr. Mendel", "profLink": "https://www.professoren.tum.de/en/mendl-christian"},
+          {"lecture": "Robotics", "prof": "Prof. Dr.-Ing. Burschka", "profLink": "https://www.in.tum.de/i06/people/prof-dr-ing-darius-burschka/"},
+          {"lecture": "Robotics Motion Planning", "prof": "Prof. Dr.-Ing. Burschka", "profLink": "https://www.in.tum.de/i06/people/prof-dr-ing-darius-burschka/"},
       ]
     },
     {
@@ -86,10 +93,10 @@ const data = {
         "endDate": "July 2016",
         "content": [
           { 
-            "gpa": "",
-            "grade": "",
+            "gpa": "3.55",
+            "grade": "1,6",
             "highlightedContent": "Description ", 
-            "normalContent": "The IT department provides services for TUM.ai that make the day to day work more efficient."},
+            "normalContent": "Geram High School Degree (Abitur)."},
         ],
         "focus_topics": [
         ],
@@ -106,8 +113,8 @@ const data = {
         "endDate": "June 2013",
         "content": [
           { "gpa": "",
-            "grade": "1,6",
-            "highlightedContent": "Description ", "normalContent": "The IT department provides services for TUM.ai that make the day to day work more efficient."},
+            "grade": "",
+            "highlightedContent": "Description ", "normalContent": "IGCSE/GCSE's"},
         ],
         "focus_topics": [
         ],
@@ -502,7 +509,7 @@ export default function Personal({prefix}){
                       <div className={styles.FocusTopics}> {"Focus Topics"}  </div>
                       <ul className={styles.List}>
                         {track.focus_topics.map((ft, index)=>(
-                          <li key={index}>
+                          <li key={index} className={styles.FocusTopicsText}>
                             {ft.ft} 
                           </li>
                         ))}
@@ -511,7 +518,8 @@ export default function Personal({prefix}){
                       <ul className={styles.List}>
                         {track.lectures.map((lecture, index)=>(
                           <li key={index}>
-                            {lecture.lecture} {lecture.prof}
+                            <p className={styles.Lecture}>{lecture.lecture}</p> 
+                            <a href={lecture.profLink} className={styles.Prof}>{lecture.prof}</a>
                           </li>
                         ))}
                       </ul>
@@ -609,7 +617,8 @@ export default function Personal({prefix}){
                       <ul className={styles.List}>
                         {track.lectures.map((lecture, index)=>(
                           <li key={index}>
-                            {lecture.lecture} {lecture.prof}
+                            <p>{lecture.lecture}</p> 
+                            <a href={lecture.profLink}>{lecture.prof}</a>
                           </li>
                         ))}
                       </ul>
@@ -723,7 +732,8 @@ export default function Personal({prefix}){
                       <ul className={styles.List}>
                         {track.lectures.map((lecture, index)=>(
                           <li key={index}>
-                            {lecture.lecture} {lecture.prof}
+                            <p>{lecture.lecture}</p> 
+                            <a href={lecture.profLink}>{lecture.prof}</a>
                           </li>
                         ))}
                       </ul>

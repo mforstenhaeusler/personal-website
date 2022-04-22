@@ -11,7 +11,7 @@ const data = {
             "startDate": "Febuary 2022",
             "endDate": " ",
             "location": "Munich, Germany",
-            "description": "Working student position focussing on deep learning applications and evaluations in an engineering scope.",
+            "description": "Working student position focussing on digitalizing engineering research, development and production processes through the application of artificial intelligence.",
             "img": "/logos/BMW_logo_(gray).svg",
         },
         {
@@ -22,7 +22,7 @@ const data = {
             "startDate": "Jun 2021",
             "endDate": " ",
             "location": "Munich, Germany",
-            "description": "TUM.ai is a student initiative located in Munich, that runs projects with Industry Partners, Workshops and Hackathons around the topic of Artificial Intelligence.",
+            "description": "TUM.ai is a student initiative located in Munich, that runs projects with Industry Partners, Workshops and Hackathons around the topic of Artificial Intelligence. I lead the software development and IT team.",
             "img": "/logos/tumai_blackVioletlarge_logo.png",
         },
         {
@@ -44,7 +44,8 @@ const data = {
             "startDate": "May 2018",
             "endDate": "May 2020",
             "location": "Washington, D.C., USA",
-            "description": "",
+            "description": "I worked as an undergraduate research assistent on numerical and experimental research developing of multifrequential \
+            and multidimensional AFM (Atomic Force Microscopy) techniques to model viscoelastic material characteristics.",
             "img": "/logos/GW_SEAS_logo.jpeg",
         },
         {
@@ -55,11 +56,11 @@ const data = {
             "startDate": "May 2019",
             "endDate": "August 2019",
             "location": "Schwäbisch Gmünd, Germany",
-            "description": "Research and Development on the sensor mechanics of the torque sensor and steering angle sensor used in electronic power steering racks.",
-            "img": "/logos/Bosch-Logo.svg",
+            "description": "Research and Development on the sensor mechanics of the torque and steering angle sensor used in electronic power steering racks.",
+            "img": "/logos/bosch-logo-de.png",
         },
         {
-            "company":"Bentz Jaz Group",
+            "company":"Bentz Jaz Group & National Univeristy of Singapore",
             "link":"https://www.bentzjaz.com.sg/",
             "position": "Student Research Project",
             "type": "Part-Time",
@@ -67,7 +68,7 @@ const data = {
             "endDate": "December 2018",
             "location": "Singapore, Singapore",
             "description": "Design Project via National University of Singapore School of Engineering with Bentz Jaz Singapore Pte Ltd. Designed and constructed from scratch a Smart Pesticide Dispensing Vehicle following guidelines from Bentz Jaz, where I led the electronics and software team and final assembly. Applied for a patent.",
-            "img": "/logos/GW_SEAS_logo.jpeg",
+            "img": "/logos/NUS_logo.png",
         },
     ],
 }

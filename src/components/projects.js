@@ -44,17 +44,17 @@ const data = {
           "img": "/assets/smart_dispencing_vehicle_nus.png",
           "authers": "Choong Wai Kean, Gan Chin Boon, Gwee Meng Hong, Maximilian Forstenhäusler, Saung Su Su Phoo, Tan Chung Haw",
           "content": "Student Research Project at NUS",
-          "pdf": "",
+          "pdf": "https://drive.google.com/file/d/1ewguY0TwIuy52ovIh0YmmO3P974NwQAV/view?usp=sharing",
           "slides": "",
           "date": "December 2018"
         },
         {
           "title":"Personal Website",
           "link":"",
-          "code": "https://github.com/mforstenhaeusler/personal-website-template",
+          "code": "https://github.com/mforstenhaeusler/personal-website",
           "img": " ",
           "authers": "Forstenhaeusler, M",
-          "content": " Text",
+          "content": "Personal Website",
           "pdf": "",
           "slides": "",
           "date": ""
@@ -134,7 +134,7 @@ export default function Projects({prefix}){
                     <div className={styles.CardSubHeader}>{project.authers}, {project.date} </div>
                     <div className={styles.CardDescription}>{project.content} </div>
                     <div className={styles.CardLinks}> 
-                      <a href={project.pdf} className={styles.button}> PDF </a>
+                      <a href={project.pdf} className={styles.button} target="_blank" rel="noreferrer noopener"> PDF </a>
                     </div>
                   </div>                
                 </div>
