@@ -1,5 +1,7 @@
 .SkillsItem{
     display: flex;
+    padding-top: 100px;
+    background: linear-gradient(295.13deg, #F6F2FF 7.21%, #FFFFFF 93.4%), #C4C4C4;
 }
 .Grid{
     width: 100%;
