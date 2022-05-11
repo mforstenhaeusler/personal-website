@@ -6,11 +6,11 @@ import Link from 'next/link'
 const data = {
   "title": "",
   "paragraph_highlighted": "",
-  "paragraph": "I am currently pursing my graduate studies at the Technical Univeristy of Munich (TUM). Along side my studies, I work as a working \
-  student at BMW, focussing on digitalizing of engineering research, development and production processes through the application of artificial \
+  "paragraph": "I am currently pursuing my graduate studies at the Technical Univeristy of Munich (TUM). Alongside my studies, I work as a working \
+  student at BMW, focusing on digitalizing of engineering research, development and production processes through the application of artificial \
   intelligence. Further, I am an active member of a student organization centred around artifically intelligence, where I lead the \
-  software development of web and cloud based applications. In general, I am a very open-minded person and eager to learn and \
-  expand my knowledge about artifical intelligence, data anlytics, robotics and its applications.",
+  software development of web- and cloud-based applications. In general, I am a very open-minded person and eager to learn and \
+  expand my knowledge on artifical intelligence, data anlytics, robotics and its applications.",
   "button": "Find out more about me!",
   "button_link": "/personal",
   "cvlink": "",
