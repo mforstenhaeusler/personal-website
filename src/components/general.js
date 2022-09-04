@@ -16,7 +16,7 @@ const data = {
     swimming and of course academia, where I studied Mechanical Engineering (B.Sc.) and was part of the Division I Swimming and Diving Team."},
     {"p":"After completing my Bachelor's Degree in 2020, I started my graduate studies at the Technical University of Munich. Alongside my studies, I work as a working student \
     at BMW, focusing on digitalizing of engineering research, development and production processes through the application of artificial intelligence.\
-    Further, I am an active member of Germany's largest student organization centered around artifical intelligence, where I lead the software development of web \
+    Further, I am an active member of Germany's largest student organization centered around artifical intelligence, where I led and now mentor the software development of web \
     and cloud based applications."},
     {"p": "I am a very open-minded person and eager to learn and expand my knowledge about artifical intelligence, \
     data anlytics, AI in science, robotics and its applications."},

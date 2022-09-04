@@ -4,6 +4,17 @@ import Image from "./Image"
 const data = {
     "experiences": [
         {
+            "company":"Technical University of Munich, Chair of Computer Aided Medical Procedures",
+            "link":"https://www.cs.cit.tum.de/camp/start/",
+            "position": "Guided Research - 3D Computer Vision",
+            "type": "Part-Time",
+            "startDate": "May 2022",
+            "endDate": " ",
+            "location": "Munich, Germany",
+            "description": "Guided Research in the area of self-supervised / weakly supervised 3D segmentation.",
+            "img": "/logos/Logo_of_the_Technical_University_of_Munich.svg",
+        },
+        {
             "company":"BMW Group",
             "link":"https://www.bmw.com",
             "position": "Working Student Machine Learning and Deep Learning",
