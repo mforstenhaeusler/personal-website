@@ -31,7 +31,7 @@ const data = {
             "position": "Software Dev Team Lead",
             "type": "Part-Time",
             "startDate": "Jun 2021",
-            "endDate": " ",
+            "endDate": "May 2022",
             "location": "Munich, Germany",
             "description": "TUM.ai is a student initiative located in Munich, that runs projects with Industry Partners, Workshops and Hackathons around the topic of Artificial Intelligence. I lead the software development and IT team.",
             "img": "/logos/tumai_blackVioletlarge_logo.png",
