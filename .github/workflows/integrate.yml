@@ -64,7 +64,7 @@ jobs:
         working-directory: src
     env:
       NEXT_PUBLIC_BASE_PATH: /personal-website
-      NEXT_PUBLIC_CV_LINK: "https://drive.google.com/file/d/164LuoyglZpuVC9I8eu_ulqxDKQ-KaPpG/view?usp=sharing"
+      NEXT_PUBLIC_CV_LINK: https://drive.google.com/file/d/1_ypo4IJLaW8kV_Nc5pfpCGCf9T46s1Nr/view?usp=sharing
       NEXT_PUBLIC_EMAIL: maxiforstenhaeusler@gmail.com
 
     steps:
