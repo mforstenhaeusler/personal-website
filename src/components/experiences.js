@@ -12,7 +12,7 @@ const data = {
             "endDate": " ",
             "location": "Pasadena, CA, United States",
             "description": "Research in physics-informed geometric deep learning for molecular property prediction and force fields!",
-            "img": "/logos/Seal_of_the_California_Institute_of_Technology.png",
+            "img": "/logos/caltech-logo.png",
         },
         {
             "company":"Technical University of Munich, Chair of Computer Aided Medical Procedures",
