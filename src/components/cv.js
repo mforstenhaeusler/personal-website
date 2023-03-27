@@ -6,7 +6,7 @@ export default function CV(){
     console.log(cvLink);
     return(<div className={styles.CVItem}>
         <p align="center">
-        <iframe src="https://drive.google.com/file/d/1oGVJTw9vBXfj-q5OU0GPVHTcg0Rfp8Lc/view?usp=share_link" className={styles.CV}></iframe>
+        <iframe src="https://drive.google.com/file/d/17QcvMC-B8XX4NHjY4bUW05ahFEbo3xTG/view?usp=share_link" className={styles.CV}></iframe>
         </p>
     </div>)
 }
