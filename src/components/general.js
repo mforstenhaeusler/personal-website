@@ -14,8 +14,9 @@ const data = {
     competed at the 1st European Games in Baku."},
     {"p": "After completion of the Abitur, I was fortunate to get the opportunity to move to Washington D.C. to continue \
     swimming and of course academia, where I studied Mechanical Engineering (B.Sc.) and was part of the Division I Swimming and Diving Team."},
-    {"p":"After completing my Bachelor's Degree in 2020, I started my graduate studies at the Technical University of Munich. Alongside my studies, I work as a working student \
-    at BMW, focusing on digitalizing of engineering research, development and production processes through the application of artificial intelligence.\
+    {"p":"After completing my Bachelor's Degree in 2020, I started my graduate studies at the Technical University of Munich. Alongside my studies, I worked as a working student \
+    at BMW, focusing on digitalizing of engineering research, development and production processes through the application of artificial intelligence. I am currently writting my Thesis\
+    at the California Institute of Technology in Pasadena, California on physics-informed geometric deep learning for molecular property prediciton and force fields.\
     Further, I am an active member of Germany's largest student organization centered around artifical intelligence, where I led and now mentor the software development of web \
     and cloud based applications."},
     {"p": "I am a very open-minded person and eager to learn and expand my knowledge about artifical intelligence, \

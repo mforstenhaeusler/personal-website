@@ -4,12 +4,23 @@ import Image from "./Image"
 const data = {
     "experiences": [
         {
+            "company":"California Institute of Technology",
+            "link":"http://www.wag.caltech.edu/",
+            "position": "Visiting Researcher",
+            "type": "Full-Time",
+            "startDate": "November 2022",
+            "endDate": " ",
+            "location": "Pasadena, CA, United States",
+            "description": "Research in physics-informed geometric deep learning for molecular property prediction and force fields!",
+            "img": "/logos/Seal_of_the_California_Institute_of_Technology",
+        },
+        {
             "company":"Technical University of Munich, Chair of Computer Aided Medical Procedures",
             "link":"https://www.cs.cit.tum.de/camp/start/",
             "position": "Guided Research - 3D Computer Vision",
             "type": "Part-Time",
             "startDate": "May 2022",
-            "endDate": " ",
+            "endDate": "November 2022",
             "location": "Munich, Germany",
             "description": "Guided Research in the area of self-supervised / weakly supervised 3D segmentation.",
             "img": "/logos/Logo_of_the_Technical_University_of_Munich.svg",

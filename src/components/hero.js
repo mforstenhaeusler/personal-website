@@ -13,8 +13,8 @@ const data = {
   "firstname": "Maximilian",
   "lastname": "Forstenhäusler",
   "student": "M.Sc. in Robotics, Cognition, Intelligence",
-  "work": "Working Student @ BMW",
-  "workLink": "https://www.bmw.com/",
+  "work": "Visiting Researcher at CalTech",
+  "workLink": "http://www.wag.caltech.edu/",
   "university": "TUM",
   "universityLink": "https://www.tum.de/" 
 }
@@ -22,7 +22,8 @@ const data = {
 const dataAbout = {
   "title": "",
   "paragraph_highlighted": "",
-  "paragraph": "Welcome to my website 😊. I am currently pursing my graduate studies at the Technical Univeristy of Munich (TUM). Along side my studies, I am a working \
+  "paragraph": "Welcome to my website 😊. I am currently pursing my graduate studies at the Technical Univeristy of Munich (TUM) \
+  writing my Thesis in Ggeometric Deep Learning at the California Institute of Technology. Along side my studies, I worked as a working\
   student at BMW, focussing on digitalizing engineering research, development and production processes through the application of artificial \
   intelligence. Further, I am an active member of Germany's largest student organization centered around artifical intelligence, where I led and now mentor the \
   software development of web and cloud based applications. In general, I am a very open-minded person and eager to learn and \
